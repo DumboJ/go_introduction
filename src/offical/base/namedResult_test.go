@@ -1,4 +1,4 @@
-package base
+package main
 
 import "testing"
 
@@ -11,6 +11,16 @@ func Test_returnNamed(t *testing.T) {
 Go的返回值可以被命名，它们被视作定义在函数顶部的变量
 没有参数的 return 语句返回已命名的返回值~直接返回
 直接返回应当用在短函数中，长函数中影响代码可读性
+
+					bool
+					string
+					int  int8  int16  int32  int64
+					uint uint8 uint16 uint32 uint64 uintptr
+					byte // uint8 的别名
+					rune // int32 的别名
+						// 表示一个 Unicode 码点
+					float32 float64
+					complex64 complex128
 */
 func split(sum int) (x, y int) {
 	x = sum*7 + 10
