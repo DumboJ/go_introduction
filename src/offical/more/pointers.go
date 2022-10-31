@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	i, j := 42, 2701
 
-	p := &i         // 指向 i
-	fmt.Println(*p) // 通过指针读取 i 的值
-	*p = 21         // 通过指针设置 i 的值
+	p := &i         // point to i
+	fmt.Println(*p) // read i value through point
+	*p = 21         // set i value through point
 	fmt.Println(i)  // 查看 i 的值
 
 	p = &j         // 指向 j
