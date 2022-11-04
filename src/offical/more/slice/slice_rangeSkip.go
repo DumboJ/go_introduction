@@ -9,7 +9,7 @@ import "fmt"
 func main() {
 	slice := make([]int, 10)
 	for i := range slice {
-		//todo 移位index个无符号值
+		// todo 移位index个无符号值
 		slice[i] = i << uint(i)
 	}
 	for _, v := range slice {
