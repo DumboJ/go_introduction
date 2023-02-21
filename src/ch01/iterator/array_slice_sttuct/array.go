@@ -7,5 +7,6 @@ func main() {
 	fmt.Println(a)
 	var s []int = a[1:3]
 	fmt.Println(s)
-
+	fmt.Printf("the type of s is %T \n", s)
+	fmt.Printf("the type of s is %T", a)
 }
