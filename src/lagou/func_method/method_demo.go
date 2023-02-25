@@ -24,4 +24,10 @@ func main() {
 	name.sayHi()
 	name.Modify() //也可以通过 (&name).modify()调用 此时 modify()方法的接受者类型就不用指定指针类型，GO会自动转换
 	name.sayHi()
+
+	//方法可以通过变量声明
+	user := UserName("66")
+	say := UserName.sayHi
+	//通过方法变量调用,要传一个接收者调用
+	say(user)
 }
