@@ -6,7 +6,7 @@ import "fmt"
 
 //1.errors类似接口 Success
 type Success interface {
-	Error() string
+	success() string
 }
 
 //2.定义errorString() 类似的类型
@@ -14,8 +14,8 @@ type successString struct {
 	s string
 }
 
-//3.errorString结构体实现Success接口方法Error()
-func (success *successString) Error() string {
+//3.errorString结构体实现Success接口方法success()
+func (success *successString) success() string {
 	return success.s
 }
 
