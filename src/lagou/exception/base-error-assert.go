@@ -51,4 +51,12 @@ func main() {
 	} else {
 		fmt.Println(sum1)
 	}
+
+	//当error包含嵌套信息时，断言方式
+	var em *baseError
+	if errors.As(msg, &em) {
+		fmt.Println("错误代码为：", em.code, "错误信息为：", em.msg)
+	} else {
+		fmt.Println(sum1)
+	}
 }
