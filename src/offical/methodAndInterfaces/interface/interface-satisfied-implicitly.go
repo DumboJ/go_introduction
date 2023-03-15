@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//函数都是隐式声明的Demo
+//GO中接口都是隐式声明的
 //defer an Interface
 type I interface {
 	M()
