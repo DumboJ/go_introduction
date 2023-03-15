@@ -23,7 +23,7 @@ func main() {
 	v.Scale(2)
 	//必须指针传参
 	ScaleFunc(&v, 10)
-	//
+
 	//ScaleFunc(v,10)		--compile:error
 
 	p := &Vertx{4, 3}
