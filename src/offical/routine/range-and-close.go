@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //使用channel实现一个斐波那契函数
 func fibonacci(len int, ch chan int) {
@@ -9,6 +11,11 @@ func fibonacci(len int, ch chan int) {
 		ch <- a
 		a, b = b, a+b
 	}
+	/*a, b := 0, 1
+	for i := 0; i < len; i++ {
+		ch <- a
+		a, b = b, a+b
+	}*/
 	//only  the sender can close channel ,receiver can't close it
 	close(ch)
 }
